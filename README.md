@@ -51,3 +51,14 @@ git clone https://github.com/itsVaishnavii/pathfinding-visualizer.git
 cd pathfinding-visualizer
 npm install
 npm start
+
+## 📌 Algorithms Explained   ← ✅ 
+
+- **BFS (Breadth-First Search)** – Guarantees shortest path in unweighted graphs.
+- **DFS (Depth-First Search)** – Explores deep paths first, not always optimal.
+- **A\* (A-Star Search)** – Uses heuristic to find shortest path efficiently.
+
+Each algorithm uses a `previousNode` reference to reconstruct the path after visiting.
+
+
+
