@@ -1,0 +1,123 @@
+/* Layout container */
+.grid-container {
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 20px;
+}
+
+.grid-container.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Controls and buttons */
+.controls {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+button {
+  margin: 5px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #388e3c;
+}
+
+select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+/* Grid structure */
+.grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-row {
+  display: flex;
+}
+
+.node {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #ccc;
+  transition: all 0.2s ease-in-out;
+}
+
+.node:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Node types */
+.node.start {
+  background-color: green;
+}
+
+.node.end {
+  background-color: red;
+}
+
+.node.wall {
+  background-color: black;
+}
+
+.node.visited {
+  background-color: #4f8ef7;
+}
+
+.node.shortest-path {
+  background-color: yellow;
+}
+
+/* Dark mode overrides */
+.grid-container.dark .node.start {
+  background-color: #00e676;
+}
+
+.grid-container.dark .node.end {
+  background-color: #ff5252;
+}
+
+.grid-container.dark .node.wall {
+  background-color: #757575;
+}
+
+.grid-container.dark .node.visited {
+  background-color: #3d5afe;
+}
+
+.grid-container.dark .node.shortest-path {
+  background-color: #ffd54f;
+}
+
+.grid-container.dark button {
+  background-color: #444;
+  color: white;
+}
+
+.grid-container.dark button:hover {
+  background-color: #555;
+}
+
+.grid-container.dark select {
+  background-color: #1e1e1e;
+  color: #fff;
+  border: 1px solid #555;
+}
